@@ -24,9 +24,10 @@ const applyJob=async(req,res)=>{
        job.applications.push(newApplication._id);
        await job.save();
        return res.json({
-        message:"Job Applied Successfully"
+        message:"Job Applied Successfully",
+        data:newApplication
        })
-   } catch (error) {
+   } catch (error) { 
     console.log(error);
    }
 }

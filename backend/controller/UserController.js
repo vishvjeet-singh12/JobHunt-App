@@ -50,7 +50,7 @@ const Login = async (req, res) => {
     if (!userExist) {
       return res.json({
         message: "User is not exist",
-        success: false,
+        success: false, 
       });
     }
     const user = await bcrypt.compare(password, userExist.password);
@@ -67,12 +67,11 @@ const Login = async (req, res) => {
         userID: userExist._id.toString(),
         data: userExist,
       });
-      console.log("User is matched");
     } else {
       res.json({
         message: "Invalid Email or Password",
       });
-      console.log("User is not matched");
+
     }
   } catch (error) {
     console.log(error);

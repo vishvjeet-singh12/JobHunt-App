@@ -63,8 +63,7 @@ const CompanySetup = () => {
         })
         const responseData=await response.json().then((result)=>{
              if(response.status===200){
-                console.log(result.message);
-                  console.log(result.company);
+               
                   setSingleCompany(result.company);
              }
         })
@@ -83,7 +82,6 @@ const CompanySetup = () => {
      if(input.file){
       formData.append("file",input.file);
      }
-     console.log(formData);
     try {
       setLoading(true);
      const response=await fetch(`http://localhost:4000/company/updateCompany/${params.id}`,{
@@ -95,9 +93,9 @@ const CompanySetup = () => {
       credentials:"include"
      })
      const data=await response.json().then((result)=>{
-         console.log(result.message);
+         
           if(response.status===200){
-             console.log(result.data);
+             
             toast.success(result.message);
             navigate("/admin/companies")
           }

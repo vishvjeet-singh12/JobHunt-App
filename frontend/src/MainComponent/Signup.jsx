@@ -56,10 +56,10 @@ const Signup = () => {
           credentials: "include"
         })
         const data=await response.json().then((result)=>{
-               console.log(result.message);
+              
                if(response.status ===200){
                     if(result.message==="Registered Successfully!!" || result.message==="User already exist"){
-                       console.log(result.data)    
+                          
                       toast.success(result.message);
                       navigate("/login");
                     }

@@ -17,7 +17,7 @@ const useGetAllJobs = () => {
                     }
                 })
                 const data=await response.json().then((result)=>{
-                    console.log(result.message);
+                    
                     if(response.status===200){
                          dispatch(setAllJobs(result.data))
                     }

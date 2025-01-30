@@ -38,7 +38,6 @@ const CompanyCreate = () => {
           })
           const reponseData=await response.json().then((result)=>{
                if(response.status===200){
-                  console.log(result.data);
                   toast.success(result.message);
                     dispatch(setSingleCompany(result.data))
                   const companyId=result.data._id

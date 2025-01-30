@@ -26,7 +26,7 @@ const Login = () => {
    const formSubmit=async(e)=>{
     e.preventDefault();
     try {
-      const response=await fetch(`http://localhost:4000/api/portalLogin`,{
+      const response=await fetch(`  http://localhost:4000/api/portalLogin`,{
         method:"POST",
         headers:{
             "Content-Type":"application/json"
@@ -35,16 +35,16 @@ const Login = () => {
         credentials:"include"
       })
       const data=await response.json().then((result)=>{
-             console.log(result.message);
+             
              if(response.status ===200){
                   if(result.message==="Successfully Loggedin!!"){
-                    console.log(result.data)
+                    
                     storageTokenLs(result.token) 
                     navigate("/");   
                     toast.success(`Welcome ${result.data.fullname}`)
                   }
                   else if(result.message==="User is not exist" || result.message==="Account doesn't exist with current role"){
-                    console.log(result.message);
+                    
                     toast.error(result.message)
                   }
                   else if(result.message==="Invalid Email or Password"){

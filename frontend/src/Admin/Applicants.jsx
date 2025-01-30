@@ -23,8 +23,6 @@ const Applicants = () => {
              })
               const responseData=await response.json().then((result)=>{
                   if(response.status===200){
-                    console.log(result.message);
-                    console.log(result.job)
                     dispatch(setAllApplicants(result.job))
                   }
               })

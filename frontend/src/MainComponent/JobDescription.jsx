@@ -23,7 +23,7 @@ const JobDescription = () => {
       })
       const responsedata=await response.json().then((result)=>{
             if(response.status===200){
-              console.log(result.message)
+            
               setIsApplied(true);    //update the local state
               const updatedSingleJob={...data,applications:[...data.applications,{applicant:user?._id}]};
               setData(updatedSingleJob);   //help us to realtime UI update
@@ -46,9 +46,9 @@ const JobDescription = () => {
               }
            })
            const responsedata=await response.json().then((result)=>{
-              console.log(result.message);
+              
                 if(response.status===200){
-                    console.log(result.data)
+                    
                     setData(result.data);
                     setIsApplied(result.data.applications.some(application=>application.applicant== user?._id))
                 }

@@ -56,7 +56,7 @@ const PostJob = () => {
 
   const submitHandler=async(e)=>{
     e.preventDefault();
-    console.log(input);
+   
     try {
       setLoading(true);
         const response=await fetch(`http://localhost:4000/job/postJobs`,{
@@ -69,9 +69,9 @@ const PostJob = () => {
           credentials:"include"
         })
         const responseData=await response.json().then((result)=>{
-            console.log(result.message);
+            
             if(response.status ===200){
-               console.log(result.data);
+              
                toast.success(result.message);
                navigate("/admin/jobs");
             }
@@ -244,7 +244,7 @@ const PostJob = () => {
                     {companies.map((company) => {
                       return (
                         <SelectItem key={company._id} value={company.name.toLowerCase()}>
-                          {company.name}
+                          {company.name} 
                         </SelectItem>
                       );
                     })}

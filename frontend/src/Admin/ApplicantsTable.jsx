@@ -36,7 +36,7 @@ const ApplicantsTable = () => {
         })
         const responseData=await response.json().then((result)=>{
             if(response.status===200){
-              console.log(result.message)
+
               toast.success(result.message)
             }else {
               toast.error(responseData.message || "Something went wrong");

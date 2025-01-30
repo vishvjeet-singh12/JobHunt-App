@@ -21,8 +21,6 @@ const AppliedJobTable = () => {
                 })
                 const responseData=await response.json().then((result)=>{
                         if(response.status===200){
-                            console.log(result.message);
-                            console.log(result.application)
                             dispatch(setAllAppliedJobs(result.application));
                         }
                 })

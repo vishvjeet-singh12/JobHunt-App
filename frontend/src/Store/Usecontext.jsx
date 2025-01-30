@@ -27,9 +27,9 @@ import { createContext, useEffect, useState } from "react";
                 }
             })
             const data=await response.json().then((result)=>{
-                  console.log(result.message);
+                  
                   if(response.status===200){
-                      console.log(result.data);
+                     
                       setUser(result.data);
                   }
             })

@@ -49,9 +49,7 @@ const AdminJobsTable = () => {
         },
       });
       const responseData = await response.json().then((result) => {
-        console.log(result.message);
         if (response.status === 200) {
-          console.log(result.data);
           setAllJobs(result.data);
           // dispatch(setAllAdminJobs(result.data));
         }
