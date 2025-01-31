@@ -42,7 +42,7 @@ const AdminJobsTable = () => {
 
   const getAllAdminJobs = async () => {
     try {
-      const response = await fetch(`https://jobhunt-app-1-tjyg.onrender.com/job/getAdminJob`, {
+      const response = await fetch(`https://jobhunt-app-f649.onrender.com/job/getAdminJob`, {
         method: "GET",
         headers: {
           Authorization: Authorization,

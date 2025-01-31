@@ -13,7 +13,7 @@ const AppliedJobTable = () => {
     useEffect(()=>{
         const fetchAppliedJobs=async()=>{
              try {
-                const response=await fetch(`https://jobhunt-app-1-tjyg.onrender.com/application/getAppliedJob`,{
+                const response=await fetch(`https://jobhunt-app-f649.onrender.com/application/getAppliedJob`,{
                   method:"GET",
                   headers:{
                     "Authorization":Authorization

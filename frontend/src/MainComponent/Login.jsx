@@ -26,7 +26,7 @@ const Login = () => {
    const formSubmit=async(e)=>{
     e.preventDefault();
     try {
-      const response=await fetch(`https://jobhunt-app-1-tjyg.onrender.com/api/portalLogin`,{
+      const response=await fetch(`https://jobhunt-app-f649.onrender.com/api/portalLogin`,{
         method:"POST",
         headers:{
             "Content-Type":"application/json"

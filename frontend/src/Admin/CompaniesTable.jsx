@@ -43,7 +43,7 @@ const CompaniesTable = () => {
   const navigate=useNavigate();
   const getAllCompany = async () => {
     try {
-      const response = await fetch(`https://jobhunt-app-1-tjyg.onrender.com/company/getCompany`, {
+      const response = await fetch(`https://jobhunt-app-f649.onrender.com/company/getCompany`, {
         method: "GET",
         headers: {
           Authorization: Authorization,

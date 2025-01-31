@@ -10,7 +10,7 @@ const useGetAllJobs = () => {
     useEffect(()=>{
         const fetchAllJobs=async()=>{
             try {
-                const response=await fetch(`https://jobhunt-app-1-tjyg.onrender.com/job/getAllJobs?keyword=${searchQuery}`,{
+                const response=await fetch(`https://jobhunt-app-f649.onrender.com/job/getAllJobs?keyword=${searchQuery}`,{
                     method:"GET",
                     headers:{
                     "Authorization":Authorization

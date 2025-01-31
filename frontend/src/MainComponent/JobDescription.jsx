@@ -15,7 +15,7 @@ const JobDescription = () => {
 
   const applyJobHandler=async()=>{
     try {
-      const response=await fetch(`https://jobhunt-app-1-tjyg.onrender.com/application/applyJob/${params.id}`,{
+      const response=await fetch(`https://jobhunt-app-f649.onrender.com/application/applyJob/${params.id}`,{
         method:"GET",
         headers:{
           "Authorization":Authorization
@@ -39,7 +39,7 @@ const JobDescription = () => {
 
     const getJobById=async()=>{
         try {
-           const response=await fetch(`https://jobhunt-app-1-tjyg.onrender.com/job/getJobBy/${params.id}`,{
+           const response=await fetch(`https://jobhunt-app-f649.onrender.com/job/getJobBy/${params.id}`,{
               method:"GET",
               headers:{
                 "Authorization":Authorization

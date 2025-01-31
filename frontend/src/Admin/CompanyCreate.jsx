@@ -27,7 +27,7 @@ const CompanyCreate = () => {
 
     const registerNewCompany=async()=>{
       try {
-          const response=await fetch(`https://jobhunt-app-1-tjyg.onrender.com/company/companyRegisteration`,{
+          const response=await fetch(`https://jobhunt-app-f649.onrender.com/company/companyRegisteration`,{
               method:"POST",
               headers:{
                    "Content-Type":"application/json",
