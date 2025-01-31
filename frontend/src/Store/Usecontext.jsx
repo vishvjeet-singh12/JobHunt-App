@@ -20,7 +20,7 @@ import { createContext, useEffect, useState } from "react";
     const Authentication=async()=>{
         if (!token) return;
         try {
-            const response=await fetch(`http://localhost:4000/api/portalUser`,{
+            const response=await fetch(`https://jobhunt-app-1-tjyg.onrender.com/api/portalUser`,{
                 method:"GET",
                 headers:{
                     "Authorization":Authorization
