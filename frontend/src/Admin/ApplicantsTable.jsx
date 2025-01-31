@@ -26,7 +26,7 @@ const ApplicantsTable = () => {
   const statusHandler=async(status,id)=>{
     try {
       
-        const response=await fetch(`http://localhost:4000/application/updatestatus/${id}`,{
+        const response=await fetch(`https://jobhunt-app-1-tjyg.onrender.com/application/updatestatus/${id}`,{
           method:"POST",
           headers:{ 
              "Authorization":Authorization,

@@ -50,7 +50,7 @@ const Signup = () => {
     }
  
       try {
-        const response=await fetch(`http://localhost:4000/api/userRegisteration`,{
+        const response=await fetch(`https://jobhunt-app-1-tjyg.onrender.com/api/userRegisteration`,{
           method: "POST",
           body: formData,
           credentials: "include"

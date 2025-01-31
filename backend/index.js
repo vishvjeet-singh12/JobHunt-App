@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieparser());
 const corsOptions={
-    origin:"http://localhost:5173",
+    origin:"https://jobhunt-app-1-tjyg.onrender.com",
     method:"GET,POST,PATCH,DELETE,PUT",
     credentials:true
 }

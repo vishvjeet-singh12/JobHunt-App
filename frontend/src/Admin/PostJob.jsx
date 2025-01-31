@@ -59,7 +59,7 @@ const PostJob = () => {
    
     try {
       setLoading(true);
-        const response=await fetch(`http://localhost:4000/job/postJobs`,{
+        const response=await fetch(`https://jobhunt-app-1-tjyg.onrender.com/job/postJobs`,{
           method:"POST",
           headers:{
             "Content-Type":"application/json",

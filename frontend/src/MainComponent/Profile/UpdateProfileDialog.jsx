@@ -73,7 +73,7 @@ const navigate=useNavigate();
    
     try {
       setLoading(true);
-      const response = await fetch(`http://localhost:4000/api/profile/update`, {
+      const response = await fetch(`https://jobhunt-app-1-tjyg.onrender.com/api/profile/update`, {
         method: "PATCH",
         headers: {
           Authorization: Authorization,

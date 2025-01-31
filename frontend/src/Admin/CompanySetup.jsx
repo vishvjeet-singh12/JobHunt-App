@@ -84,7 +84,7 @@ const CompanySetup = () => {
      }
     try {
       setLoading(true);
-     const response=await fetch(`http://localhost:4000/company/updateCompany/${params.id}`,{
+     const response=await fetch(`https://jobhunt-app-1-tjyg.onrender.com/company/updateCompany/${params.id}`,{
       method:"PATCH", 
       headers:{
         "Authorization":Authorization
